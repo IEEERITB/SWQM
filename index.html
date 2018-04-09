@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+
+	
+	<script src="js\jquery-3.3.1.min.js"></script>
+
+	<script src="js\highcharts.js"></script>
+	<script src="js\scripT.js"></script>
+	<script src="js\jQuery.js"></script>
+	<script src="js\jspdf.min.js"></script>
+
+	
+	
+</head>
+<body>
+	<div class="container-fluid" style="opacity: 0.9;">
+		<div class="row">
+			<div class="col-md-12 col-ls-12" id="head">
+				<div class="col-md-2 col-ls-2">
+					<a href="#home"><img src="RIT_logo.png" height="75" id="logo"></a>
+				</div>
+				<div class="col-md-8 col-ls-8">
+					<h1 id="title">SMART WATER QUALITY METER</h1>
+				</div>
+				<div class="col-md-2 col-ls-2" style="font-size: 15px; color: white; padding: 10px;">
+					<p id="date"></p>
+				</div>
+			</div>
+
+			<div class="col-md-2 col-ls-2" id="menu">
+				<div class="col-md-12 col-ls-12 menu" style="background-color: #229; color: white;">MENU</div>
+				<a href="#home"><div class="col-md-12 col-ls-12 menu" id="homeM">Home</div></a>
+				<a href="#profile"><div class="col-md-12 col-ls-12 menu" id="profileM">Profile</div></a>
+				<a href="#quality"><div class="col-md-12 col-ls-12 menu" id="qualityM">Quality</div></a>
+				<a href="#billing"><div class="col-md-12 col-ls-12 menu" id="billingM">Billing</div></a>
+				<a href="login.html"><div class="col-md-12 col-ls-12 menu" id="loginM">Login</div></a>
+				<a href="#helpline"><div class="col-md-12 col-ls-12 menu" id="helplineM">Helpline</div></a>
+			</div> 
+
+			<div class="col-md-10 col-ls-10" id="main">
+
+				<div class="body col-md-12 col-ls-12" id="home">
+					<h3>HOME</h3>
+					<p></p>
+					<h4>Introduction</h4>
+						<ol>
+							<li>Among the several environmental crisis that we are facing , water scarcity is increasing at an alarming rate.</li>
+							<li>One of the main reasons for this is the uncontrolled consumption.</li>
+							<li>The Smart Water Quality Check Meter not only checks the levels of water consumption, but also the quality of water thereby helping to improve the quality of life. </li>
+						</ol>
+						<hr>
+						<h4>Objectives</h4>
+						<ol>
+							<li>The objective of our project is to introduce a smart water system which helps in water conservation, saves human effort and also helps in improving its quality.</li>
+							<li>The quality check parameter can be implemented both in domestic households as well as in industries.</li>
+							<li>The proposed system mainly focuses on the Indian system.</li>
+							<li>The system developed is expected to be cost effective and user friendly.</li>
+						</ol>
+						<p></p>
+						<hr>
+					<img src="Pic1.png" height="200px!important" alt="Pic1" style="float: left;">
+					<img src="Pic2.jpg" height="200px!important" alt="Pic2" style="float: right;">
+				</div>
+
+				<div class="body col-md-12 col-ls-12" id="profile">
+					<h3>PROFILE</h3>
+					<div class="photo col-md-3 col-ls-3" id="f1">
+		      				<img src="pp.png" id="pp" alt="Founder 2" class="img-thumbnail" height="50px;">
+		      				<br/>
+				             <p style="font-size: 20px; text-align: center;">Name of person 2</p>
+				             <p>Person's address(1)<br/>Person's address(2)<br/>
+				             Contact details of the person here.</p>
+				             <br/>
+		      		</div>
+		      		<div class="info col-md-8 col-ls-8" id="f1" style="margin-left:0px; float:right;">
+		      			<blockquote>
+		      			<ol>
+		      				<li>Few remarks regarding the ecustomer's water utility is to be given here month-wise.</li>
+		      				<li>Few remarks regarding the ecustomer's water utility is to be given here month-wise(2).</li>
+		      				<li>Few remarks regarding the ecustomer's water utility is to be given here month-wise(3).</li>
+		      				<li>Few remarks about quality of water that is supplied to the customer to be included.</li>
+		      				<li>For more details. contact us at _______@___.in.</li>
+	      				</ol>
+		      				<small>Ministry of Drinking Water Resouces...</small>
+		      			</blockquote>
+					 </div>
+					 <div class="info col-md-8 col-ls-8" id="f1" style="margin-left:0px; float:right;">
+					 		<h4>Recent Billing summaries can be shown here.</h4>
+
+					 		<a href="#"><h5>Billing summaries link for January.</h5></a>
+					 		<a href="#"><h5>Billing summaries link for Febuary.</h5></a>
+					 		<a href="#"><h5>Billing summaries link for March.</h5></a>
+					 </div>
+				</div>
+
+				<div class="body col-md-12 col-ls-12" id="billing">
+					<h3>BILLING INFO</h3>
+
+					<div class="col-md-9 col-ls-9">
+						<marquee direction="left"><p style="font-size: 30px; color: #119;" id="month0"></p></marquee>
+						<div class="col-md-6  col-ls-6">
+						<h4>Particular</h4>
+							<p class="param1">Usage for current month(litres): </p><br/>
+							<p class="param1">Usage in last hour(litres): </p><br/>
+							<p class="param1">Balance(INR): </p>
+						</div>
+						<div class="col-md-4  col-ls-4">
+						<h4>Value</h4>
+							<p id="usageTotal" class="val"></p>
+							<p id="usage" class="val"></p>
+							<p id="amount" class="val"></p>
+						</div> <br/>
+						<div class="col-md-offset-4 col-md-6 col-ls-offset-4 col-ls-6" style="float: right;">
+							<input type="submit" value="PAY" id="pay">
+							<input type="submit" value="Generate Bill" id="bill">
+						</div>
+					</div>
+					<div class="col-md-3 col-ls-3" style="padding: 0px;">
+						<div class="col-md-12 col-ls-12" id="archieve">
+							<h4>Archieve</h4>
+							<hr>
+							<a href="#month2"><div class="col-md-12 col-ls-12 arch"><p id="month2"></p></div></a>
+							<a href="#month1"><div class="col-md-12 col-ls-12 arch"><p id="month1"></p></div></a>
+							<a href="#month0"><div class="col-md-12 col-ls-12 arch"><p id="month0"></p></div></a>
+							<br/>
+						</div>
+						<div class="col-md-12 col-ls-12" id="archieve">
+							<h4>Rate Reference</h4>
+							<hr>
+							<p class="slab"><slab style="color:#449;">Slab 1:</slab> 0 - 4000 litres<br/>Rs. 10/- per litre</p>
+							<p class="slab"><slab style="color:#449;">Slab 2:</slab> 4001 - 6000 litres<br/>Rs. 30/- per litre</p>
+							<p class="slab"><slab style="color:#449;">Slab 3:</slab> 6001 - 10000 litres<br/>Rs. 50/- per litre</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="body col-md-12 col-ls-12" id="quality">
+					<h3>QUALITY RECORD</h3>
+					<div class="col-md-4">
+					<h4>Parameter</h4>
+						<p class="param">pH</p>
+						<p class="param">Turbidity</p>
+						<p class="param">Temperature</p>
+						<p class="param">Dissolved O2</p>
+						<p class="param">Conductivity</p>
+					</div>
+					<div class="col-md-4">
+					<h4>Value</h4>
+						<p id="pH" class="val"></p>
+						<p id="turb" class="val"></p>
+						<p id="temp" class="val"></p>
+						<p id="diss" class="val"></p>
+						<p id="cond" class="val"></p>
+					</div>
+					<div class="col-md-4 sign">
+					<h4>Safe or Not</h4>
+					<p><span class="glyphicon glyphicon-ok" id="pHG"></span></p>
+					<p><span class="glyphicon glyphicon-ok" id="turbG"></span></p>
+					<p><span class="glyphicon glyphicon-ok" id="tempG"></span></p>
+					<p><span class="glyphicon glyphicon-ok" id="dissG"></span></p>
+					<p><span class="glyphicon glyphicon-ok" id="condG"></span></p>	
+					</div>
+						
+					<div class="col-md-12">
+						<table id="trellis">
+					    <tr>
+							<td class="first"></td>
+							<td></td>
+							<td></td>
+							<td></td>
+					    </tr>
+					</table>
+					</div>	
+						 
+				</div>	
+
+				<div class="body col-md-12 col-ls-12" id="helpline">
+					<h3>CONTACT US</h3>
+					  <form>
+					    <label for="fname">First Name</label>
+					    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					    <label for="lname">Last Name</label>
+					    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					    <label for="email">Email</label>
+					    <input type="text" id="email" name="email" placeholder="Your email is..">
+
+					    <label for="subject">Subject</label>
+					    <input type="text" id="subject" name="subject" placeholder="Subject">
+
+					    <label for="message">Message</label>
+					    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+					    <input type="submit" value="Submit">
+					  </form>
+					  <p></p>
+				</div>
+			</div>
+	
+			
+			<div class="col-md-12" id="footer"></div>
+		</div>
+	</div>
+	
+</body>
+</html>
